@@ -1,4 +1,4 @@
-# Detector de Edad en tiempo real con python y OpenCV
+# Clasificador de Edad en tiempo real con python y OpenCV
 
 Este programa realiza detección facial y tratará de predecir el rango de edad del rostro identificado,
 por medio de **OpenCV** para la creación de las _DNN_ y _CNN_ necesarias en la clasificación de caras y edades.
