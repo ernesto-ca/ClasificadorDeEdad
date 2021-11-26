@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#-----------------FUENTE-----------------
+#-----------------FUENTES-----------------
 #https://github.com/techycs18/age-detection-python-opencv
 #https://www.thepythoncode.com/article/predict-age-using-opencv
 #-----------------------------------------------
@@ -75,7 +75,7 @@ args = vars(parser.parse_args())
 # El modelo arquitectonico
 # descargado de: https://drive.google.com/open?id=1kiusFljZc9QfcIYdU2s7xrtWHTraHwmW
 AGE_PROTO = 'deploy_age.prototxt'
-# The model pre-trained weights
+# Modelo pre-entrenado
 # descargado de: https://drive.google.com/open?id=1kWv0AjxGSN0g31OeJa02eBGM0R_jcjIl
 AGE_MODEL = 'age_net.caffemodel'
 # descargado de: https://raw.githubusercontent.com/opencv/opencv/master/samples/dnn/face_detector/deploy.prototxt
@@ -89,11 +89,11 @@ FACE_MODEL = "res10_300x300_ssd_iter_140000_fp16.caffemodel"
 faceNet = cv2.dnn.readNetFromCaffe(FACE_PROTO, FACE_MODEL)
 
 
-# Genere el cnn para reconocimiento de edad
+# Generando el cnn para reconocimiento de edad
 ageNet = cv2.dnn.readNetFromCaffe(AGE_PROTO, AGE_MODEL)
 
 # Inicializando la transmisión de video
-print("Abriendo la camara web...")
+print("Abriendo la camara...")
 vs = cv2.VideoCapture(0)
 time.sleep(2.0)
 contadorF = 0

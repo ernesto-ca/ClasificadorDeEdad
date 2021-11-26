@@ -1,4 +1,4 @@
-# Detector de Edad en tiempo real con python
+# Detector de Edad en tiempo real con python y OpenCV
 
 Este programa realiza detección facial y tratará de predecir el rango de edad del rostro identificado,
 por medio de **OpenCV** para la creación de las _DNN_ y _CNN_ necesarias en la clasificación de caras y edades.
@@ -38,7 +38,7 @@ Realmente utilizar el detector es muy sencillo, primero es necesario tener el en
 
 Esto iniciará la cámara que se vera en un recuadro o ventana, al mismo tiempo que mostrará el recuadro con la predicción en la parte superior.
 
-En caso de que se necesite más predicción utilizar de la siguiente forma:
+En caso de que se necesite un minimo de predicción más alto, ingresar en la linea de comandos el argumento:
 
     >python detector_edad.py --predecir 0.N
 
@@ -50,6 +50,6 @@ Los correspondientes autores de partes del código se encuentran dentro de los p
 
 #### Notas
 
--   En caso de querer desactivar el entorno virtual solo con escribir **deactivate** será suficiente.
+-   En caso de querer desactivar el entorno virtual solo con escribir **deactivate** en la terminal será suficiente.
 -   Para saber más sobre **venv** visita el siguiente [enlace](https://docs.python.org/3/library/venv.html).
 -   Para saber más sobre las librerías utilizadas, por favor visita los enlaces: [OpenCV](https://docs.opencv.org/4.x/index.html) y [numpy](https://numpy.org/doc/stable/).
